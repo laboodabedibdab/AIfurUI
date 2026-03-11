@@ -208,8 +208,8 @@ with gr.Blocks() as demo:
 
     with gr.Row():
         with gr.Column():
-            prompt_input = gr.Textbox(label="Prompt", lines=3, value="extremly sexual, same style, keep style, detailed eyes, thick fur, fluffy fur, beautiful, ultra high detailed 8k, score_9, teen furry dog girl, beautiful pretty face, slim young body, very big hips and chest, very thin bikini, ultra provocative pose, thin straps, snug fit, chest forward, anime style, very sexy, slutty attitude, playful, teasing, flirty")
-            neg_prompt_input = gr.Textbox(label="Negative Prompt", lines=3, value="different style, makeup, bold, human, red eyes, red lips, mutated bad anatomy, old, broken bikini, mutated bikini, anime, 2D, extra tails, strings, short clothes, drawn, blur, lowres, bad anatomy, modesty, censored, flat shading, extra limbs, old, mature, fat, clothes, boring, plain")
+            prompt_input = gr.Textbox(label="Prompt", lines=3, value="")
+            neg_prompt_input = gr.Textbox(label="Negative Prompt", lines=3, value="")
 
             with gr.Row():
                 height_slider = gr.Slider(256, 2048, step=64, label="Высота", value=1024)
@@ -267,3 +267,4 @@ with gr.Blocks() as demo:
 
 
 demo.launch(server_name="0.0.0.0", server_port=25565)
+
